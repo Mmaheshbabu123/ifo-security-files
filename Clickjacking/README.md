@@ -25,8 +25,6 @@ This guide explains how to handle clickjacking issues using JavaScript to check 
     if(window.top != window.self){
       console.log('not matched');
     }
-    var parent = $(window.frameElement).parent();
-
     if(top_url != null && top_url !== self_url){
 return (
 <div className = "unauthorisedAccess">
@@ -71,11 +69,8 @@ if(window.top != window.self){
   console.log('not matched');
 }
 ```
-5.Get the parent element of the iframe:
-```javascript
-var parent = $(window.frameElement).parent();
-```
-6.Check if the top window's URL is different from the self window's URL and show an access denied message if not authorized:
+
+5.Check if the top window's URL is different from the self window's URL and show an access denied message if not authorized:
 
 ```javascript
 if(top_url != null && top_url !== self_url){
