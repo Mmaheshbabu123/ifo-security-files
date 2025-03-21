@@ -87,5 +87,4 @@ Summary
 
 This code helps in protecting against clickjacking by ensuring that the current window is not loaded within an unauthorized iframe. If the top window's URL is different from the self window's URL, it displays an "ACCESS DENIED" message.
 
-You can copy this content and paste it into your README.md file. If you need assistance with committing this file to your repository or any further modifications, please let me know!
 
