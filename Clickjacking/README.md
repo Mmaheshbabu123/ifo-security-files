@@ -1,6 +1,7 @@
 # Clickjacking Protection
 
 This guide explains how to handle clickjacking issues using JavaScript to check if the current window is in an iframe and ensure it is loaded from the correct domain.
+
 #FullCode
 ```javascript
   const getHostname = (url_link) => {
